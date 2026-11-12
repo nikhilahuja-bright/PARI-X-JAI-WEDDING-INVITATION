@@ -25,7 +25,7 @@ const CONFIG = {
   weddingEnd:   "2026-11-27T01:00:00+05:30",   // calendar end
 
   invitation: {
-    blessing: "With the blessings of Almighty God & heavenly blessings from Grand Parents Late Smt. Diya Rani & Late Sh. Kharati Lal Khurana",
+    blessing: "With the blessings of Jai Maha Kaali & heavenly blessings from Grand Parents Late Smt. Diya Rani & Late Sh. Kharati Lal Khurana",
     hosts: "Smt. Kiran & Sh. Sanjay Khurana",
     request: "earnestly seek your benign presence and solicit your blessings on the gracious occasion of the \u201cWEDDING CEREMONY\u201d of their loving son"
   },
