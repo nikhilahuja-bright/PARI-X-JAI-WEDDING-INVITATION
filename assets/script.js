@@ -3,60 +3,78 @@
    All names, dates, venue details and links live in CONFIG.
    ========================================================== */
 const CONFIG = {
-  bride: { name: "Pari", relation: "D/o", parents: "Smt. Savita & Sh. Somnath Sapra" },
-  groom: { name: "Jai",  relation: "S/o", parents: "Smt. Kiran & Sh. Sanjay Khurana" },
-  couple: "Pari & Jai",
-  monogram: "P & J",
-  hashtag: "#PariWedsJai",
+  groom: { name: "Jai",  fullName: "Jai Khurana" },
+  bride: { name: "Pari", fullName: "Pari Sapra", parents: "(D/o Smt. Savita & Sh. Somnath Sapra of Rohtak)" },
+  couple: "Jai & Pari",
+  monogram: "J & P",
+  hashtag: "#JaiWedsPari",
   mantra: "|| Shri Ganeshaya Namah ||",
+
+  intro: {
+    kicker: "Wedding Invitation",
+    couple: "Jai Khurana with Pari Sapra",
+    from: "A Cordial Invitation from: Smt. Kiran Khurana & Sh. Sanjay Khurana"
+  },
 
   // Dates
   dateShort: "26 . 11 . 2026",
   dateDay: "Thursday",
   dateLong: "26th November 2026",
-  timeLabel: "From 7:00 PM onwards",
-  weddingStart: "2026-11-26T19:00:00+05:30",   // countdown target + calendar start
+  timeLabel: "Sehra Bandhi at 5:00 PM",
+  weddingStart: "2026-11-26T17:00:00+05:30",   // countdown target + calendar start (Sehra Bandhi)
   weddingEnd:   "2026-11-27T01:00:00+05:30",   // calendar end
 
   invitation: {
-    blessing: "With the blessings of the Almighty and the love of our elders, we cordially invite you and your family to grace the auspicious wedding ceremony of",
-    closing: "Your gracious presence and blessings will make our celebration complete."
+    blessing: "With the blessings of Almighty God & heavenly blessings from Grand Parents Late Smt. Diya Rani & Late Sh. Kharati Lal Khurana",
+    hosts: "Smt. Kiran & Sh. Sanjay Khurana",
+    request: "earnestly seek your benign presence and solicit your blessings on the gracious occasion of the \u201cWEDDING CEREMONY\u201d of their loving son"
   },
 
-  // icon: "barat" | "dinner" | "doli"
+  residence: {
+    hosts: "Smt. Kiran Khurana & Sh. Sanjay Khurana",
+    address: "840/19 Patel Nagar, Near Geeta Vidhya Mandir School, Rohtak - 124001",
+    phones: ["9255198806", "9350054596"]          // shown as tap-to-call links
+  },
+
+  // icon: "jagran" | "cocktail" | "sehra" | "baraat" | "dinner"
+  eventsEyebrow: "21st \u2013 26th November 2026",
+  eventsTitle: "Golden Moments",
   events: [
-    { title: "Reception of Barat", time: "7:00 PM onwards", icon: "barat" },
-    { title: "Dinner",             time: "8:00 PM onwards", icon: "dinner" },
-    { title: "Doli",               time: "Taaron ki Chhaon Mein", note: "under the stars", icon: "doli" }
+    { date: "Sat, 21st Nov 2026", title: "Maa Bhagwati Jagran", place: "At Residence", time: "9:00 PM", icon: "jagran" },
+    { date: "Wed, 25th Nov 2026", title: "Cocktail Party",      place: "At Residence", time: "8:00 PM", icon: "cocktail" },
+    { date: "Thu, 26th Nov 2026", title: "Sehra Bandhi",                               time: "5:00 PM", icon: "sehra" },
+    { date: "Thu, 26th Nov 2026", title: "Departure of Baraat",                        time: "6:00 PM", icon: "baraat" },
+    { date: "Thu, 26th Nov 2026", title: "Dinner",                                     time: "7:00 PM", icon: "dinner" }
   ],
 
   venue: {
     name: "Riyasatt Banquet & Lawn",
-    address: "Near Delhi Road, Bohar, Rohtak, Haryana",
+    address: "Main Masthnath Nagar Road, Near Delhi Road, Bohar, Rohtak, Haryana 124021",
     // Swap these for your exact pin later (e.g. a maps.app.goo.gl link for directionsUrl)
-    mapEmbedUrl: "https://maps.google.com/maps?q=Riyasatt+Banquet+and+Lawn+Bohar+Rohtak&z=15&output=embed",
-    directionsUrl: "https://www.google.com/maps/search/?api=1&query=Riyasatt+Banquet+and+Lawn+Bohar+Rohtak"
+    mapEmbedUrl: "https://maps.google.com/maps?q=Riyasatt+Banquet+%26+Lawn,+Main+Masthnath+Nagar+Road,+Near+Delhi+Road,+Bohar,+Rohtak,+Haryana+124021&z=15&output=embed",
+    directionsUrl: "https://www.google.com/maps/search/?api=1&query=Riyasatt+Banquet+%26+Lawn%2C+Main+Masthnath+Nagar+Road%2C+Near+Delhi+Road%2C+Bohar%2C+Rohtak%2C+Haryana+124021"
   },
 
   calendar: {
-    title: "Pari weds Jai — Wedding Celebration",
-    details: "With the blessings of our elders, we warmly invite you to the wedding of Pari & Jai. Reception of Barat 7:00 PM onwards · Dinner 8:00 PM onwards."
+    title: "Jai weds Pari \u2014 Wedding Ceremony",
+    details: "Wedding ceremony of Jai Khurana with Pari Sapra. Sehra Bandhi 5:00 PM \u00b7 Departure of Baraat 6:00 PM \u00b7 Dinner 7:00 PM."
   },
 
   closing: {
     title: "Awaiting your gracious presence",
-    text: "As two souls become one and two families unite, our joy will be complete only with you beside us — to fill the evening with your love, laughter & blessings."
+    text: "As two souls become one and two families unite, our joy will be complete only with you beside us \u2014 to fill the evening with your love, laughter & blessings.",
+    kids: "Special Invitation From Our Family Shining Stars: Darshita, Darshika, Raghav, Madhav"
   },
 
   rsvp: {
     title: "RSVP",
     subtitle: "With Love & Warm Regards",
-    families: ["Sapra Family", "Budhiraja Family", "Batra Family", "Bajaj Family"]
+    families: ["Khurana Family", "Dhamija Family", "Suri Family"]
   },
 
   compliments: {
     title: "With Best Compliments From",
-    names: ["Kartik Sapra", "Sagar Budhiraja & Jagriti"]
+    names: ["All Relatives & Friends"]
   },
 
   credit: { text: "Magical Moments by Jai Ahuja", logo: "assets/logo.png" },
@@ -81,19 +99,23 @@ const CONFIG = {
       if (typeof v === "string") el.textContent = v;
     });
 
-    const icons = { barat: "#ic-barat", dinner: "#ic-dinner", doli: "#ic-doli" };
+    const icons = { jagran: "#ic-diya", cocktail: "#ic-cocktail", sehra: "#ic-sehra", baraat: "#ic-barat", dinner: "#ic-dinner" };
     $("#timeline").innerHTML = CONFIG.events.map((e, i) => `
       <li class="event reveal" style="transition-delay:${i * 0.08}s">
         <span class="event-icon" aria-hidden="true"><svg><use href="${icons[e.icon] || "#ic-dinner"}"/></svg></span>
+        ${e.date ? `<p class="event-note">${esc(e.date)}</p>` : ""}
         <h3 class="event-title">${esc(e.title)}</h3>
         <p class="event-time">${esc(e.time)}</p>
-        ${e.note ? `<p class="event-note">(${esc(e.note)})</p>` : ""}
+        ${e.place ? `<p class="event-note">${esc(e.place)}</p>` : ""}
       </li>`).join("");
 
     $("#families").innerHTML = CONFIG.rsvp.families
       .map((f, i) => `<li class="reveal" style="transition-delay:${i * 0.1}s">${esc(f)}</li>`).join("");
     $("#compliments").innerHTML = CONFIG.compliments.names
       .map((n, i) => `<li class="reveal" style="transition-delay:${i * 0.12}s"><span class="foil-script">${esc(n)}</span></li>`).join("");
+
+    $("#phones").innerHTML = "M. " + CONFIG.residence.phones
+      .map(n => `<a href="tel:+91${n.replace(/\D/g, "")}">${esc(n)}</a>`).join(", ");
 
     $("#mapFrame").src = CONFIG.venue.mapEmbedUrl;
     $("#mapFrame").title = "Map showing " + CONFIG.venue.name;

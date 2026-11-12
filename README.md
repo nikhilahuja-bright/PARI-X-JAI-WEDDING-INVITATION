@@ -1,4 +1,4 @@
-# Pari weds Jai: Wedding Invitation
+# Jai weds Pari: Wedding Invitation
 
 A one-page wedding invitation built with plain HTML, CSS and JavaScript. There is no build step, and it runs on GitHub Pages.
 
